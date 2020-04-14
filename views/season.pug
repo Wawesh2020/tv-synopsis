@@ -1,0 +1,15 @@
+html
+   head
+      title Seasons
+      link(rel="stylesheet" href="/css/styles.css") 
+   body
+      h1 Season #{season.number} 
+      table      
+         tr
+         
+         for episode in season.episodes 
+          tr 
+            td(class="Number")= episode.number 
+            td(class="title")= episode.title
+            td(class="director")= episode.director  
+            td(class="synopsis")= episode.synopsis 
