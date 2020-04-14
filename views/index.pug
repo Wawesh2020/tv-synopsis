@@ -1,0 +1,21 @@
+html
+  
+  body 
+    h1= showdata.title
+    ul
+    h2 Developed By 
+    for developers in  showdata.developedBy 
+          li= developers 
+    ul
+    h3 Starring
+    for actors in  showdata.starring
+        li= actors 
+    ul
+    h4 Seasons
+    for season in showdata.seasons
+         li 
+           a(href=`/season/${season.number}`)=`Seasons ${season.number}`  
+    
+
+
+
